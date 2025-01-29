@@ -1,7 +1,0 @@
-Specific python and other libraries version
-
-secure enforce https on site
-
-Use github actions cron jobs
-
-
