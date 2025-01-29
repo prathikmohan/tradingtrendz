@@ -1,0 +1,9 @@
+Specific python and other libraries version
+
+secure files in github
+
+Use github actions and github pages to deploy
+and cron jobs to deploy
+env variables etc.
+
+
