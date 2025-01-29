@@ -1,9 +1,7 @@
 Specific python and other libraries version
 
-secure files in github
+secure enforce https on site
 
-Use github actions and github pages to deploy
-and cron jobs to deploy
-env variables etc.
+Use github actions cron jobs
 
 
