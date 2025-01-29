@@ -1,0 +1,29 @@
+name: Run Final Script Every Weekday
+
+on:
+  schedule:
+    # Runs at 11:30 AM UTC, which is 5:00 PM IST (UTC+5:30)
+    - cron: "30 11 * * 1-5"
+  workflow_dispatch:  # Allows manual trigger if needed
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.1"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Python script
+        run: |
+          python Final_Script.py
