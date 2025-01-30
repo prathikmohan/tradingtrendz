@@ -13,6 +13,19 @@ from datetime import datetime, timedelta
 import os
 import glob
 
+######################################## GENERATING BASE AND DATA SAVING PATHS ####################
+
+# Get the directory of the script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")  # Store all CSVs inside a 'data' folder
+
+# Ensure the data folder exists
+os.makedirs(DATA_DIR, exist_ok=True)
+
+
+
+
+
 ######################################## GENERATING .CSV FILES ####################################
 
 #-------------CHECK IF WEEKEND OR WEEKDAY, IF WEEKEND JUST PRINT TODAY'S TIME, ELSE EXECUTE CODE (PUT INSIDE IT) AND THEN PRINT TIME----------------
@@ -60,7 +73,8 @@ else:
 
     # Check if the CSV download was successful
     if csv_response.status_code == 200:
-        file_path = 'C:/Users/prathikm/Desktop/data_wrapper/etf_data.csv'
+        #file_path = 'C:/Users/prathikm/Desktop/data_wrapper/etf_data.csv'
+        file_path = os.path.join(DATA_DIR,"etf_data.csv")
 
         # Save the CSV file
         with open(file_path, 'wb') as f:
@@ -77,7 +91,8 @@ else:
         # -------------------ANALYZE THE DATA---------------------
 
         # Read the CSV file into a DataFrame
-    df = pd.read_csv('C:/Users/prathikm/Desktop/data_wrapper/etf_data.csv')
+    #df = pd.read_csv('C:/Users/prathikm/Desktop/data_wrapper/etf_data.csv')
+    df = pd.read_csv(os.path.join(DATA_DIR,"etf_data.csv"))
 
         # First, strip whitespace from column names. Here it is \n in .csv
     df.columns = df.columns.str.strip()
@@ -115,7 +130,8 @@ else:
         # -------------------MATCH AND REPLACE---------------------
 
         # Load the input CSV file
-    csv_file_path = 'C:/Users/prathikm/Desktop/data_wrapper/Replace_Symbols_Updated.csv'  # Replace with your actual CSV file path
+    #csv_file_path = 'C:/Users/prathikm/Desktop/data_wrapper/Replace_Symbols_Updated.csv'  # Replace with your actual CSV file path
+    csv_file_path = os.path.join(DATA_DIR,"Replace_Symbols_Updated.csv")
     csv_df = pd.read_csv(csv_file_path)
 
         # Iterate using the actual index values of the DataFrame
@@ -170,7 +186,8 @@ else:
     })
 
         # Specify the path to your CSV
-    output_csv = r"C:/Users/prathikm/Desktop/data_wrapper/liquid_funds_stats.csv"
+    #output_csv = r"C:/Users/prathikm/Desktop/data_wrapper/liquid_funds_stats.csv"
+    output_csv = os.path.join(DATA_DIR,"liquid_funds_stats.csv")
 
         # Overwrite the file each time
     df_overwrite.to_csv(output_csv, index=False, header=True)
@@ -211,10 +228,12 @@ else:
         # Create a filename based on the day and week number
     filename = f"{day_of_week}_Week{week_number}.csv"
 
+    file_path = os.path.join(DATA_DIR, filename)
         # Save the DataFrame to CSV
-    combined_df_reset.to_csv(f"C:/Users/prathikm/Desktop/data_wrapper/{filename}", index=False)
+    #combined_df_reset.to_csv(f"C:/Users/prathikm/Desktop/data_wrapper/{filename}", index=False)
+    combined_df_reset.to_csv(file_path, index=False)
 
-    print(f"File saved as: {filename}")
+    print(f"File saved as: {file_path}")
 
     time.sleep(30)
 
@@ -227,14 +246,16 @@ else:
     day_of_week = today.strftime('%A')
     week_number = today.isocalendar()[1]
     new_filename = f"{day_of_week}_Week{week_number}.csv"
-    new_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{new_filename}"
+    #new_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{new_filename}"
+    new_file_path = os.path.join(DATA_DIR, new_filename)
 
         # Calculate yesterday's date
     yesterday = today - timedelta(days=1)
     yesterday_day_of_week = yesterday.strftime('%A')
     yesterday_week_number = yesterday.isocalendar()[1]
     yesterday_filename = f"{yesterday_day_of_week}_Week{yesterday_week_number}.csv"
-    yesterday_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{yesterday_filename}"
+    #yesterday_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{yesterday_filename}"
+    yesterday_file_path = os.path.join(DATA_DIR, yesterday_filename)
 
         # Check if yesterday's file exists
     if os.path.exists(yesterday_file_path):
@@ -267,7 +288,8 @@ else:
             last_friday_day_of_week = last_friday.strftime('%A')
             last_friday_week_number = last_friday.isocalendar()[1]
             last_friday_filename = f"{last_friday_day_of_week}_Week{last_friday_week_number}.csv"
-            last_friday_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{last_friday_filename}"
+            #last_friday_file_path = f"C:/Users/prathikm/Desktop/data_wrapper/{last_friday_filename}"
+            last_friday_file_path = os.path.join(DATA_DIR, last_friday_filename)
 
                 # Check if that file exists
             if os.path.exists(last_friday_file_path):
@@ -360,7 +382,8 @@ def main():
     # 1) Read your CSV into a DataFrame
     # ===============================
     
-    folder_path = r"C:/Users/prathikm/Desktop/data_wrapper"
+    #folder_path = r"C:/Users/prathikm/Desktop/data_wrapper"
+    folder_path = DATA_DIR
     csv_path = get_latest_csv(folder_path)
 
     if csv_path is None:
@@ -429,7 +452,8 @@ def main():
     # ===============================
     # 3) Read liquid_funds_stats.csv to get LiquidFundsVolume & LiquidFundsPercentage
     # ===============================
-    liquid_csv = r"C:/Users/prathikm/Desktop/data_wrapper/liquid_funds_stats.csv"  # <-- adjust to your actual file path
+    #liquid_csv = r"C:/Users/prathikm/Desktop/data_wrapper/liquid_funds_stats.csv"  # <-- adjust to your actual file path
+    liquid_csv = os.path.join(DATA_DIR,"liquid_funds_stats.csv")
     try:
         df_liquid = pd.read_csv(liquid_csv)
         # We'll assume there's only one row with columns: LiquidFundsVolume, LiquidFundsPercentage
@@ -1607,7 +1631,41 @@ def main():
     # ===============================
     # L) Write all HTML files
     # ===============================
-    with open("index.html", "w", encoding="utf-8") as f:
+
+    with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(home_html)
+    print("Generated 'index.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "about.html"), "w", encoding="utf-8") as f:
+        f.write(about_html)
+    print("Generated 'about.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "contact.html"), "w", encoding="utf-8") as f:
+        f.write(contact_html)
+    print("Generated 'contact.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "privacy.html"), "w", encoding="utf-8") as f:
+        f.write(privacy_html)
+    print("Generated 'privacy.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "terms.html"), "w", encoding="utf-8") as f:
+        f.write(terms_html)
+    print("Generated 'terms.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "disclaimer.html"), "w", encoding="utf-8") as f:
+        f.write(disclaimer_html)
+    print("Generated 'disclaimer.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "cookie.html"), "w", encoding="utf-8") as f:
+        f.write(cookie_html)
+    print("Generated 'cookie.html' successfully!")
+
+    with open(os.path.join(BASE_DIR, "donate.html"), "w", encoding="utf-8") as f:
+        f.write(donate_html)
+    print("Generated 'donate.html' successfully!")
+
+
+    """ with open("index.html", "w", encoding="utf-8") as f:
         f.write(home_html)
     print("Generated 'index.html' successfully!")
 
@@ -1637,7 +1695,7 @@ def main():
 
     with open("donate.html", "w", encoding="utf-8") as f:
         f.write(donate_html)
-    print("Generated 'donate.html' successfully!")
+    print("Generated 'donate.html' successfully!") """
 
 if __name__ == "__main__":
     main()
