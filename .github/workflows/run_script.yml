@@ -30,18 +30,21 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          PAT: ${{ secrets.GH_PAT }}
         run: |
           # Configure Git
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Add all changed files (HTML & CSV)
+          # Ensure correct authentication
+          git remote set-url origin https://x-access-token:${PAT}@github.com/pratmo/tradingtrendz.git
+
+          # Add all changed files
           git add -A
 
           # Commit if changes exist
           git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
 
-          # Authenticate using PAT and push
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/pratmo/tradingtrendz.git
+          # Push changes
           git push origin main
+
