@@ -2,16 +2,14 @@ name: Run Final Script Every Weekday
 
 on:
   schedule:
-    # Runs at 11:30 AM UTC, which is 5:00 PM IST (UTC+5:30)
-    - cron: "30 11 * * 1-5"
-  workflow_dispatch:  # Allows manual trigger if needed
+    - cron: "30 11 * * 1-5"  # Runs at 11:30 AM UTC, which is 5:00 PM IST (UTC+5:30)
+  workflow_dispatch:
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -21,30 +19,26 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run Python script
-        run: |
-          python Final_Script.py
+        run: python Final_Script.py
 
       - name: Commit and push changes
-        env:
-          PAT: ${{ secrets.GH_PAT }}
-        run: |
-          # Configure Git
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Ensure correct authentication
-          git remote set-url origin https://x-access-token:${PAT}@github.com/pratmo/tradingtrendz.git
-
-          # Add all changed files
-          git add -A
-
-          # Commit if changes exist
-          git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
-
-          # Push changes
-          git push origin main
-
+        uses: ad-m/github-push-action@master # Use a dedicated action for pushing
+        with:
+          github_token: ${{ secrets.GH_PAT }} # Use your PAT secret
+          branch: main # Or your branch name
+          # Optional: Add a message if you want to customize it.
+          # message: 'Auto-update HTML and CSV files' 
+        # The below is no longer required as it's handled by the action
+        # env:
+        #   PAT: ${{ secrets.GH_PAT }}
+        # run: |
+        #   git config --global user.name "github-actions[bot]"
+        #   git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        #   git remote set-url origin https://x-access-token:${PAT}@github.com/pratmo/tradingtrendz.git
+        #   git add -A
+        #   git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
+        #   git push origin main
