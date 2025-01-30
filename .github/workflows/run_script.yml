@@ -26,19 +26,22 @@ jobs:
         run: python Final_Script.py
 
       - name: Commit and push changes
-        uses: ad-m/github-push-action@master # Use a dedicated action for pushing
-        with:
-          github_token: ${{ secrets.GH_PAT }} # Use your PAT secret
-          branch: main # Or your branch name
-          # Optional: Add a message if you want to customize it.
-          # message: 'Auto-update HTML and CSV files' 
-        # The below is no longer required as it's handled by the action
-        # env:
-        #   PAT: ${{ secrets.GH_PAT }}
-        # run: |
-        #   git config --global user.name "github-actions[bot]"
-        #   git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        #   git remote set-url origin https://x-access-token:${PAT}@github.com/pratmo/tradingtrendz.git
-        #   git add -A
-        #   git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
-        #   git push origin main
+        env:
+          PAT: ${{ secrets.GH_PAT }}
+        run: |
+         # Configure Git
+         git config --global user.name "github-actions[bot]"
+         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+         # Authenticate using PAT
+         git remote set-url origin https://x-access-token:${PAT}@github.com/pratmo/tradingtrendz.git
+
+         # Add all changed files (HTML & CSV)
+         git add -A
+
+         # Commit if there are changes
+         git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
+
+         # Push changes
+         git push origin main
+
