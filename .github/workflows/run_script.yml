@@ -27,3 +27,18 @@ jobs:
       - name: Run Python script
         run: |
           python Final_Script.py
+
+      - name: Commit and push changes
+        run: |
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add all changed files (HTML & CSV)
+          git add -A
+
+          # Commit if there are changes
+          git diff --staged --quiet || git commit -m "Auto-update HTML and CSV files"
+
+          # Push changes to the main branch
+          git push origin main
