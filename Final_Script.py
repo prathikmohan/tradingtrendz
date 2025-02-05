@@ -564,7 +564,19 @@ def main():
             white-space: nowrap;
         }}
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
+
 <body>
     <!-- Left Ad Placeholder -->
     <div id="left-ad">
@@ -693,6 +705,18 @@ def main():
             margin-top: 20px;
         }
     </style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -848,6 +872,19 @@ def main():
             max-width: 800px;
         }
     </style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -996,6 +1033,17 @@ def main():
             max-width: 800px;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -1157,6 +1205,18 @@ def main():
             max-width: 800px;
         }
     </style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -1299,6 +1359,17 @@ def main():
             max-width: 800px;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -1431,6 +1502,17 @@ def main():
             max-width: 800px;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
@@ -1569,6 +1651,17 @@ def main():
             line-height: 1.6;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60WBWC80X3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+
+      gtag('config', 'G-60WBWC80X3');
+    </script>
+
 </head>
 <body>
     <!-- Left Ad Placeholder -->
