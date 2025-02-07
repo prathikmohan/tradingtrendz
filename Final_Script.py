@@ -623,8 +623,8 @@ def main():
 
         <p style="font-size: 0.9em; color: #666;">
           *All data is analyzed by tradingtrendz.in. I am not SEBI registered, and the above analysis 
-          is not a recommendation to buy or sell any asset. Please trade or invest at your own risk and 
-          read the disclaimer section of our website. Liquid funds are excluded from this list.
+          is not a recommendation to buy or sell any asset. Please read the disclaimer section of 
+          my website. Special trading sessions and weekends will be ignored from analysis.
         </p>
     </div>
 
@@ -753,7 +753,7 @@ def main():
 
         
         <p>
-            Hello! My name is Prathik Mohan. I’m an engineering professional and currently also pursuing my M.Sc. in Data Science 
+            Hello! My name is Prathik. I’m an engineering professional and currently also pursuing my M.Sc. in Data Science 
             and AI. As a side hobby, I engage in positional trading and occasionally scalp the markets in my free hours. 
             Over time, I developed my own algorithms using statistics, and I've found them to be quite successful 
             in generating profits.
@@ -763,7 +763,8 @@ def main():
             trading purposes. Through my personal experience, I’ve noticed that the volume of traded ETFs 
             can sometimes give a sense of market momentum or direction. For instance, I once observed 
             unusually high volume in a China ETF on a Monday, and the same pattern continued for the next 
-            few days—after which the underlying index went up, essentially validating our volume‑based observation.
+            few days—after which the underlying index went up, essentially validating our volume-based 
+            observation. I have seen this kind of volume-based pattern occur many times in other ETFs as well.
         </p>
         <p>
             Of course, I’m not suggesting that mere volume analysis alone is enough to predict the market. 
@@ -778,11 +779,13 @@ def main():
             the overall volume analysis when compared to equity‑based or sectoral ETFs.
         </p>
         <p>
-            Going forward, I aim to include new ETFs as they’re launched by AMCs, though that might take 
-            time—so please bear with me. My main advice on how to use this site is simple: 
-            observe the consistent or rising volumes over multiple days to get a sense of which sectors 
-            might be gaining market attention. If a particular sector's ETF volume stays high consistently, 
-            that might indicate a trend worth exploring.
+            Going forward, as new ETFs are launched by AMCs, they will need to be updated and grouped into specific
+            sectors or categories in our table. I will update this whenever I get free time, though it may not
+            happen immediately—but rest assured, I will keep an eye on it. Until then, the newly launched ETF
+            will be listed somewhere below in the table, so please excuse any temporary placement. My main advice
+            on how to use this site is simple: observe the consistent or rising volumes over multiple days to get a 
+            sense of which sectors might be gaining market attention. If a particular sector's ETF volume stays
+            high consistently, that might indicate a trend worth exploring.
         </p>
         <p>
             Always remember: do your own thorough research and testing. Volume trends can be a helpful signal, 
@@ -917,8 +920,9 @@ def main():
         <h1>Contact Us</h1>
         <div class="contact-section">
         <p>
-            Have questions, feedback or interested in advertising?? I would love to hear from you!
-            Please use the information below to reach out to me.
+            If you have any questions, feedback, or are interested in advertising, I would love to hear
+            from you! Also, if you would like to purchase historical .csv data, you can use the information
+            below to reach out to me.
         </p>
         <h3>Email</h3>
         <p>
@@ -1402,11 +1406,16 @@ def main():
         <h1>Disclaimer</h1>
         <div class="disclaimer-section">
             <p>
-                The information provided on tradingtrendz.in by me (Prathik Mohan) is for general informational
+                The information provided on tradingtrendz.in by me is for general informational
                 and educational purposes only. I am not SEBI Registered and I do not offer any financial advice.
                 I are not liable for any of your losses arising from the use of data on this website. I do not
                 sell any "Premium" or "Paid" features on my website. All features, tools, charts on this 
-                website is available for free without signup/registration (as of 29th January, 2025). 
+                website is available for free without signup/registration. I do not operate any Telegram/WhatsApp groups
+                or similar platforms. I do not sell courses or services or initiate/engage in calls, emails, or messages 
+                for monetary gain or course sales. Beware of such fraudulent schemes. I am not liable if you fall 
+                victim to such scams without reading this notice. My official social media profiles, if any, will be
+                listed on this website. If a social media profile is not listed here, it is not mine and should be 
+                considered fake—so please beware.
             </p>
             <p>
                 Any reference to past or potential performance of assets is not a guarantee 
@@ -1706,7 +1715,11 @@ def main():
         </p>
 
         <p>
-            <strong>UPI: prathikmohan@icici</strong>
+            <strong>UPI: mailtothedeveloper@okicici</strong>
+        </p>
+
+        <p>
+            <strong>Paypal: paypal.me/prathikm</strong>
         </p>
 
     </div>
