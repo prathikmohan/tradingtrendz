@@ -603,7 +603,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>ETF Volume Analysis</h1>
@@ -743,7 +743,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>About tradingtrendz.in</h1>
@@ -914,7 +914,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Contact Us</h1>
@@ -1074,7 +1074,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Privacy Policy</h1>
@@ -1247,7 +1247,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Terms of Service</h1>
@@ -1400,7 +1400,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Disclaimer</h1>
@@ -1548,7 +1548,7 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Cookie Policy</h1>
@@ -1587,13 +1587,13 @@ def main():
 """
 
     # ===============================
-    # 9) DONATE PAGE HTML
+    # 9) SUPPORT PAGE HTML
     # ===============================
-    donate_html = """<!DOCTYPE html>
+    support_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Donate - tradingtrendz.in</title>
+    <title>Support - tradingtrendz.in</title>
     <style>
         body {
             margin: 0;
@@ -1697,29 +1697,25 @@ def main():
             <a href="terms.html">Terms</a>
             <a href="disclaimer.html">Disclaimer</a>
             <a href="cookie.html">Cookie Policy</a>
-            <a href="donate.html">Donate</a>
+            <a href="support.html">Support</a>
         </div>
 
         <h1>Support tradingtrendz.in</h1>
         <p>
             Maintaining a website involves costs such as domain renewal, hosting, and other
             resources. If you’ve found value in my free website,
-            please consider making a donation to help keep tradingtrendz.in running.
+            please consider supporting to help keep tradingtrendz.in running.
         </p>
         <p>
-            Any amount is appreciated and goes directly toward covering operational expenses
-            and improving future website services.
-        </p>
-        <p>
-            <strong>Thank you for your support!</strong>
+            <strong>Thank you!</strong>
         </p>
 
         <p>
-            <strong>UPI: mailtothedeveloper@okicici</strong>
+            UPI: mailtothedeveloper@okicici
         </p>
 
         <p>
-            <strong>Paypal: paypal.me/prathikm</strong>
+            Paypal: paypal.me/prathikm
         </p>
 
     </div>
@@ -1766,9 +1762,9 @@ def main():
         f.write(cookie_html)
     print("Generated 'cookie.html' successfully!")
 
-    with open(os.path.join(BASE_DIR, "donate.html"), "w", encoding="utf-8") as f:
-        f.write(donate_html)
-    print("Generated 'donate.html' successfully!")
+    with open(os.path.join(BASE_DIR, "support.html"), "w", encoding="utf-8") as f:
+        f.write(support_html)
+    print("Generated 'support.html' successfully!")
 
 
     """ with open("index.html", "w", encoding="utf-8") as f:
@@ -1799,9 +1795,9 @@ def main():
         f.write(cookie_html)
     print("Generated 'cookie.html' successfully!")
 
-    with open("donate.html", "w", encoding="utf-8") as f:
-        f.write(donate_html)
-    print("Generated 'donate.html' successfully!") """
+    with open("support.html", "w", encoding="utf-8") as f:
+        f.write(support_html)
+    print("Generated 'support.html' successfully!") """
 
 if __name__ == "__main__":
     main()
