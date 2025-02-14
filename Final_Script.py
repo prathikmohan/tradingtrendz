@@ -749,7 +749,7 @@ def main():
         <h1>About tradingtrendz.in</h1>
         
         <!-- Your image here. Adjust src, alt, and style as needed. -->
-        <img src="IMG152632.jpg" alt="Photo of John Jacob" style="max-width:200px; border-radius: 50%; margin-bottom: 20px;">
+        <img src="Updated_IMG152632.jpg" alt="Photo of John Jacob" style="max-width:200px; border-radius: 50%; margin-bottom: 20px;">
 
         
         <p>
