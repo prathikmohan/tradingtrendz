@@ -1,4 +1,4 @@
-Gold,Silver,Largecap Stocks,Midcap Stocks,Smallcap Stocks,Banking & Finance Sector,PSU Bank Sector,NBFC Sector,Public Sector Enterprise,Low Volatility Index,IT Sector,Gsecs - Bonds,Liquid Funds,Consumption Sector,Metal Sector,Auto Sector,EV Sector,Healthcare Sector,Pharma Sector,Oil and Gas Sector,Infra Sector,FMCG Sector,Manufacturing Sector,Defence Sector,Hong Kong Market,Commodities,USA Market,Reality Sector,Capital Markets & Insurance
+Gold,Silver,Largecap Stocks,Midcap Stocks,Smallcap Stocks,Banking & Finance Sector,PSU Bank Sector,NBFC Sector,Public Sector Enterprise,Low Volatility Index,IT Sector,Gsecs - Bonds,Liquid Funds,Consumption Sector,Metal Sector,Auto Sector,EV Sector,Healthcare Sector,Pharma Sector,Oil and Gas Sector,Infra Sector,FMCG Sector,Manufacturing Sector,Defence Sector,China Market,Commodities,USA Market,Reality Sector,Capital Markets & Insurance
 BBNPPGOLD,AXISILVER,HDFCSENSEX,MOMENTUM,HDFCSML250,BANKBETF,PSUBANKADD,FINIETF,ABSLPSE,HDFCLOWVOL,NIFITETF,ABGSEC,ABSLLIQUID,CONSUMIETF,METALIETF,AUTOIETF,GROWWEV,HEALTHADD,PHARMABEES,OILIETF,INFRABEES,FMCGIETF,MAKEINDIA,GROWWDEFNC,HNGSNGBEES,COMMOIETF,MONQ50,MOREALTY,ECAPINSURE
 GROWWGOLD,SILVERIETF,SENSEXIETF,NIFTYQLITY,MOSMALL250,BBNPNBETF,HDFCPSUBK,,CPSEETF,LOWVOL1,ITIETF,GSEC10ABSL,LIQUIDBETF,SBIETFCON,METAL,AUTOBEES,EVINDIA,HEALTHIETF,,,INFRAIETF,,,MODEFENCE,MAHKTECH,,MON100,,
 GOLDETFADD,SILVERBEES,UTISENSETF,HDFCMID150,SMALLCAP,BANKETFADD,PSUBNKIETF,,ICICIB22,LOWVOL,IT,LICNETFGSC,LIQUIDADD,AXISCETF,,,,AXISHCETF,,,,,,,,,MAFANG,,
@@ -17,7 +17,7 @@ IVZINGOLD,,SETFNN50,MIDQ50ADD,,AXISBNKETF,,,,,,EBBETF0430,,,,,,,,,,,,,,,,,
 GOLDETF,,ABSLNN50ET,MID150BEES,,BFSI,,,,,,EBBETF0431,,,,,,,,,,,,,,,,,
 TATAGOLD,,NEXT50,MIDCAP,,PVTBANIETF,,,,,,BBETF0432,,,,,,,,,,,,,,,,,
 GOLDCASE,,NIFTYBEES,VAL30IETF,,SBIETFPB,,,,,,AXISBPSETF,,,,,,,,,,,,,,,,,
-,,NIFTYETF,MIDSELIETF,,NPBET,,,,,,EBBETF0433,,,,,,,,,,,,,,,,,
+UNIONGOLD,,NIFTYETF,MIDSELIETF,,NPBET,,,,,,EBBETF0433,,,,,,,,,,,,,,,,,
 ,,SETFNIF50,NIFMID150,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,NIFTY1,MID150CASE,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,NIFTYIETF,MOMENTUM50,,,,,,,,,,,,,,,,,,,,,,,,,
