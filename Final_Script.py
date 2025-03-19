@@ -749,47 +749,48 @@ def main():
         <h1>About tradingtrendz.in</h1>
         
         <!-- Your image here. Adjust src, alt, and style as needed. -->
-        <img src="Updated_IMG152632.jpg" alt="Photo of John Jacob" style="max-width:200px; border-radius: 50%; margin-bottom: 20px;">
+        <!-- <img src="Updated_IMG152632.jpg" alt="Photo of John Jacob" style="max-width:200px; border-radius: 50%; margin-bottom: 20px;"> -->
 
         
         <p>
-            Hello! My name is Prathik. I’m an engineering professional and currently also pursuing my M.Sc. in Data Science 
-            and AI. As a side hobby, I engage in positional trading and occasionally scalp the markets in my free hours. 
-            Over time, I developed my own algorithms using statistics, and I've found them to be quite successful 
-            in generating profits.
+            Hello! My name is Prathik. I’m a data professional, and in my free time, I engage in positional
+            trading and occasionally scalp the markets. Over the years, I’ve developed my own algorithms using
+            statistical methods, and they’ve proven quite successful in generating profits.
         </p>
         <p>
-            I strongly believe in the potential of ETFs/Exchange Traded Funds, both for investing and 
-            trading purposes. Through my personal experience, I’ve noticed that the volume of traded ETFs 
-            can sometimes give a sense of market momentum or direction. For instance, I once observed 
-            unusually high volume in a China ETF on a Monday, and the same pattern continued for the next 
-            few days—after which the underlying index went up, essentially validating our volume-based 
-            observation. I have seen this kind of volume-based pattern occur many times in other ETFs as well.
+            I strongly believe in the potential of Exchange Traded Funds (ETFs) for both investing and trading.
+            From personal experience, I’ve noticed that ETF trading volume can sometimes reveal market momentum
+            or direction. For example, it’s not uncommon to see high trading volumes in specific areas of the
+            market. However, the official NSE ETF website typically shows only which AMC’s ETF has high volume,
+            not the particular sector or area. When a high-volume pattern persists over several days,
+            the stocks within that sector often move significantly—either up or down—reinforcing the volume-based
+            observation.
         </p>
         <p>
-            Of course, I’m not suggesting that mere volume analysis alone is enough to predict the market. 
-            It’s more like an additional tool in our toolbox—one that can give us early signals or guidance 
-            when combined with other trading strategies. 
+            Of course, I’m not suggesting that volume analysis alone can predict market movements. It’s simply 
+            another tool in our toolbox, offering early signals or guidance—especially when used alongside other
+            trading strategies—about which sector stocks might be attracting buyers or sellers.
         </p>
         <p>
-            That’s why I created <strong>tradingtrendz.in</strong>. Behind the scenes, I aggregate ETF volume 
-            data and update it regularly. I personally check the site every day to see which ETFs are trending 
-            and where volume is surging. The website's backend code runs over 1,600+ lines. One notable exclusion from my table is liquid funds, as their volume 
-            often spikes on Fridays or weekends (due to people parking money in them), which can distort 
-            the overall volume analysis when compared to equity‑based or sectoral ETFs.
+            That’s why I created tradingtrendz.in. Behind the scenes, I aggregate ETF volume data into sector-focused
+            buckets. For instance, all large-cap ETFs from different AMCs are placed under a “large-cap” category, and
+            strategy ETFs holding 80 to 90 percent large-cap companies go there as well. Each day, I check which ETFs are trending
+            and where volume is surging, helping me identify areas of heavy buying or selling. The longer these volume
+            patterns persist, the more meaningful they become. I exclude liquid funds from my analysis because they often
+            show volume spikes on Fridays or weekends, as people temporarily park money there, which can skew the overall
+            picture compared to equity-based or sectoral ETFs.
         </p>
         <p>
-            Going forward, as new ETFs are launched by AMCs, they will need to be updated and grouped into specific
-            sectors or categories in our table. I will update this whenever I get free time, though it may not
-            happen immediately—but rest assured, I will keep an eye on it. Until then, the newly launched ETF
-            will be listed somewhere below in the table, so please excuse any temporary placement. My main advice
-            on how to use this site is simple: observe the consistent or rising volumes over multiple days to get a 
-            sense of which sectors might be gaining market attention. If a particular sector's ETF volume stays
-            high consistently, that might indicate a trend worth exploring.
+            As new ETFs come to market, they’ll be categorized into the appropriate sector on the site. I’ll update these
+            listings whenever I have the time—though it may not be immediate, rest assured I’m keeping an eye on things.
+            Until then, any newly launched ETF that hasn’t been categorized yet will appear under its own name in the table,
+            so please excuse any temporary placement. My main advice is simple: observe whether certain ETFs maintain high or
+            rising volumes over multiple days to see which sectors might be gaining attention. If the volume in a particular
+            sector remains consistently high, that could indicate a trend worth exploring.
         </p>
         <p>
-            Always remember: do your own thorough research and testing. Volume trends can be a helpful signal, 
-            but they’re never a magic bullet. I wish you all the best in your trading and investing journey!
+            Finally, always conduct thorough research and testing. Volume trends can be a valuable signal, but they’re never 
+            a magic bullet. Wishing you all the best in your trading and investing journey!
         </p>
     </div>
 
