@@ -753,44 +753,19 @@ def main():
 
         
         <p>
-            Hello! My name is Prathik. I’m a data professional, and in my free time, I engage in positional
-            trading and occasionally scalp the markets. Over the years, I’ve developed my own algorithms using
-            statistical methods, and they’ve proven quite successful in generating profits.
+            Hello! I’m Prathik, a data professional who also trades on the side—primarily using positional strategies and occasional scalping. Over time, I’ve developed proprietary algorithms using statistical methods with consistent success.
         </p>
         <p>
-            I strongly believe in the potential of Exchange Traded Funds (ETFs) for both investing and trading.
-            From personal experience, I’ve noticed that ETF trading volume can sometimes reveal market momentum
-            or direction. For example, it’s not uncommon to see high trading volumes in specific areas of the
-            market. However, the official NSE ETF website typically shows only which AMC’s ETF has high volume,
-            not the particular sector or area. When a high-volume pattern persists over several days,
-            the stocks within that sector often move significantly—either up or down—reinforcing the volume-based
-            observation.
+            I strongly believe in the potential of Exchange Traded Funds (ETFs) for both investing and trading. From my experience, ETF trading volumes can hint at market momentum, though the official NSE ETF site usually shows only which AMC’s ETF has high volume—not the underlying sector. When high-volume patterns persist, the stocks in those sectors often see notable moves.
         </p>
         <p>
-            Of course, I’m not suggesting that volume analysis alone can predict market movements. It’s simply 
-            another tool in our toolbox, offering early signals or guidance—especially when used alongside other
-            trading strategies—about which sector stocks might be attracting buyers or sellers.
+            Volume alone isn’t a crystal ball; it’s one tool among many for spotting which sectors might be attracting buyers or sellers. That’s why I created tradingtrendz.in: to bucket ETF volume by sector (e.g., large-cap, mid-cap, etc.), revealing where volume is surging. I exclude liquid funds because their weekend spikes can distort overall trends.
         </p>
         <p>
-            That’s why I created tradingtrendz.in. Behind the scenes, I aggregate ETF volume data into sector-focused
-            buckets. For instance, all large-cap ETFs from different AMCs are placed under a “large-cap” category, and
-            strategy ETFs holding 80 to 90 percent large-cap companies go there as well. Each day, I check which ETFs are trending
-            and where volume is surging, helping me identify areas of heavy buying or selling. The longer these volume
-            patterns persist, the more meaningful they become. I exclude liquid funds from my analysis because they often
-            show volume spikes on Fridays or weekends, as people temporarily park money there, which can skew the overall
-            picture compared to equity-based or sectoral ETFs.
+            New ETFs will be categorized as soon as I can manage. If you see an uncategorized ETF listed by name, it just means I haven’t placed it yet. Watch for ETFs with sustained or increasing volumes over multiple days—they might indicate a trend forming.
         </p>
         <p>
-            As new ETFs come to market, they’ll be categorized into the appropriate sector on the site. I’ll update these
-            listings whenever I have the time—though it may not be immediate, rest assured I’m keeping an eye on things.
-            Until then, any newly launched ETF that hasn’t been categorized yet will appear under its own name in the table,
-            so please excuse any temporary placement. My main advice is simple: observe whether certain ETFs maintain high or
-            rising volumes over multiple days to see which sectors might be gaining attention. If the volume in a particular
-            sector remains consistently high, that could indicate a trend worth exploring.
-        </p>
-        <p>
-            Finally, always conduct thorough research and testing. Volume trends can be a valuable signal, but they’re never 
-            a magic bullet. Wishing you all the best in your trading and investing journey!
+            Always do your own research—volume trends are helpful but not foolproof. Wishing you success in your trading and investing journey!
         </p>
     </div>
 
@@ -921,16 +896,15 @@ def main():
         <h1>Contact Us</h1>
         <div class="contact-section">
         <p>
-            If you have any questions, feedback, or are interested in advertising, I would love to hear
-            from you! Also, if you would like to purchase historical .csv data, you can use the information
-            below to reach out to me.
+            If you have any questions, feedback, or are interested in advertising, feel free to email me at mailtothedeveloper@gmail.com.
         </p>
+        
+        <!--
         <h3>Email</h3>
         <p>
             <a href="mailto:mailtothedeveloper@gmail.com">mailtothedeveloper@gmail.com</a>
         </p>
-        
-        <!--
+    
         <h3>Phone</h3>
          <p>
             +91-XXXX-XXXXXX (example placeholder)
@@ -1763,12 +1737,11 @@ def main():
         f.write(cookie_html)
     print("Generated 'cookie.html' successfully!")
 
-    with open(os.path.join(BASE_DIR, "support.html"), "w", encoding="utf-8") as f:
+    """ with open(os.path.join(BASE_DIR, "support.html"), "w", encoding="utf-8") as f:
         f.write(support_html)
     print("Generated 'support.html' successfully!")
 
-
-    """ with open("index.html", "w", encoding="utf-8") as f:
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(home_html)
     print("Generated 'index.html' successfully!")
 
