@@ -1737,7 +1737,7 @@ def main():
         f.write(cookie_html)
     print("Generated 'cookie.html' successfully!")
 
-    """ with open(os.path.join(BASE_DIR, "support.html"), "w", encoding="utf-8") as f:
+    with open(os.path.join(BASE_DIR, "support.html"), "w", encoding="utf-8") as f:
         f.write(support_html)
     print("Generated 'support.html' successfully!")
 
@@ -1771,7 +1771,7 @@ def main():
 
     with open("support.html", "w", encoding="utf-8") as f:
         f.write(support_html)
-    print("Generated 'support.html' successfully!") """
+    print("Generated 'support.html' successfully!")
 
 if __name__ == "__main__":
     main()
